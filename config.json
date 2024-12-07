@@ -23,16 +23,17 @@
         "wrmsr": true,
         "cache_qos": false,
         "numa": true,
-        "scratchpad_prefetch_mode": 1
+        "scratchpad_prefetch_mode": 2
     },
     "cpu": {
         "enabled": true,
         "huge-pages": true,
         "huge-pages-jit": true,
-        "priority": 5,
+        "priority": 10,
         "yield": true,
         "asm": true,
-        "threads": 4, 
+        "threads": 4,
+        "hugepages": 128,
         "argon2": [0, 2, 4, 6, 5, 7],
         "rx": [0, 2, 4]
     },
